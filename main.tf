@@ -26,5 +26,7 @@ resource "aws_network_acl" "custom_network_acl" {
     }
   }
 
-  tags = var.tags
+  tags = {
+    Name        = "${var.project_name}-nacl"
+  }
 }

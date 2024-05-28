@@ -1,3 +1,4 @@
+# variables for the module
 variable "vpc_id" {
   description = "ID of the VPC where the network ACL will be created"
   type        = string
@@ -36,4 +37,9 @@ variable "tags" {
   description = "Tags to assign to the network ACL"
   type        = map(string)
   default     = {}
+}
+
+variable "project_name" {
+  description = "The name of the project"
+  type        = string
 }
